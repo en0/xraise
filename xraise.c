@@ -39,7 +39,7 @@ int main(int argc, char **argv)
         exit(1);
     }
 
-    dpy = XOpenDisplay("localhost:10.0");
+    dpy = XOpenDisplay(":0");
     if (!dpy)
     {
         fprintf(stderr, "Cannot open display.\n");
